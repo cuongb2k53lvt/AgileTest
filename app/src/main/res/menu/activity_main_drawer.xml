@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Trang chủ" />
+        <item
+            android:id="@+id/nav_banhang"
+            android:icon="@drawable/ic_add_cart"
+            android:title="Bán hàng" />
+        <item
+            android:id="@+id/nav_qlpet"
+            android:icon="@drawable/warehouse"
+            android:title="Quản lý pet" />
+    </group>
+    <item android:title="Khác">
+        <menu>
+            <item
+                android:id="@+id/nav_hoadon"
+                android:icon="@drawable/bill"
+                android:title="Hóa đơn" />
+
+            <item
+                android:id="@+id/nav_thongke"
+                android:icon="@drawable/barchart"
+                android:title="Thống kê doanh thu" />
+            <item
+                android:id="@+id/nav_qlnv"
+                android:icon="@drawable/team"
+                android:title="Quản lí nhân viên" />
+            <item
+                android:id="@+id/nav_thoat"
+                android:icon="@drawable/logout"
+                android:title="Thoát" />
+        </menu>
+    </item>
+</menu>

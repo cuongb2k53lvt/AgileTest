@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.mypets.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/nav_qlnv"
+        android:name="com.example.mypets.ui.QuanLyNhanVien.QuanLyNhanVien"
+        android:label="Quản lý nhân viên"
+        tools:layout="@layout/activity_quan_ly_nv"/>
+    <fragment
+        android:id="@+id/nav_qlpet"
+        android:name="com.example.mypets.ui.QuanLyPet.QuanLyPet"
+        android:label="Quản lý pet"
+        tools:layout="@layout/activity_quan_ly_pet2"/>
+    <fragment
+        android:id="@+id/nav_banhang"
+        android:name="com.example.mypets.ui.BanHang.BanHang"
+        android:label="Bán hàng"
+        tools:layout="@layout/fragment_ban_hang"/>
+    <fragment
+        android:id="@+id/nav_hoadon"
+        android:name="com.example.mypets.ui.HoaDon.HoaDon"
+        android:label="Hóa đơn"
+        tools:layout="@layout/fragment_hoa_don"/>
+    <fragment
+        android:id="@+id/nav_thongke"
+        android:name="com.example.mypets.ui.ThongKe.ThongKe"
+        android:label="Thống kê"
+        tools:layout="@layout/fragment_thong_ke"/>
+    <fragment
+        android:id="@+id/nav_thoat"
+        android:name="com.example.mypets.ui.ThongKe.ThongKe"
+        tools:layout="@layout/fragment_thong_ke"/>
+</navigation>

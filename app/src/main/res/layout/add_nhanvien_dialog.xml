@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tilTentk"
+        android:hint="Nhập tài khoản"
+        app:counterMaxLength="20"
+        app:endIconMode="clear_text"
+        app:startIconDrawable="@drawable/profileuser">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/tieTaiKhoan"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tilHoTen"
+        android:hint="Nhập họ tên"
+        app:counterMaxLength="50"
+        app:endIconMode="clear_text"
+        app:startIconDrawable="@drawable/name">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/tieHoTen"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tilMatKhau"
+        android:hint="Nhập mật khẩu"
+        app:counterMaxLength="20"
+        app:endIconMode="password_toggle"
+        app:startIconDrawable="@drawable/padlock">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/tieMatKhau"
+            android:inputType="textPassword"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tilSdt"
+        android:hint="Nhập số điện thoại"
+        app:counterMaxLength="20"
+        app:endIconMode="clear_text"
+        app:startIconDrawable="@drawable/phone">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/tieSdt" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tilDiaChi"
+        android:hint="Nhập địa chỉ"
+        app:counterMaxLength="50"
+        app:endIconMode="clear_text"
+        app:startIconDrawable="@drawable/home">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/tieDiaChi" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đăng ký"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/teal_200"
+        android:id="@+id/btnAddnv"/>
+</LinearLayout>
